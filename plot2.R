@@ -11,5 +11,5 @@ data.feb$DateTime <- strptime(data.feb$DateTime, format = "%d/%m/%Y %H:%M:%S")
 #
 # line chart
 png("plot2.png")
-plot(data.feb$DateTime, data.feb$Global_active_power, type ="l", ylab = "Global Active Power {kilowatts}", xlab="")
+plot(data.feb$DateTime, data.feb$Global_active_power, type ="l", ylab = "Global Active Power (kilowatts)", xlab="")
 dev.off()

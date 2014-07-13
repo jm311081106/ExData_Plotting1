@@ -11,9 +11,9 @@ data.feb$DateTime <- strptime(data.feb$DateTime, format = "%d/%m/%Y %H:%M:%S")
 
 # plot 3
 png("plot3.png")
-plot(data.feb$DateTime, data.feb$Sub_metering_1, type ="l", ylab = "Energy Sub Metering", xlab = "")
+plot(data.feb$DateTime, data.feb$Sub_metering_1, type ="l", ylab = "Energy sub metering", xlab = "")
 lines(data.feb$DateTime, data.feb$Sub_metering_2, col="red")
 lines(data.feb$DateTime, data.feb$Sub_metering_3, col="blue")
-legend("topright", c("sub_metering_1", "sub_metering_2", "sub_metering_3"), lty=c(1,1,1), col=c("black", "red","blue"))
+legend("topright", c("Sub_metering_1", "Sub_metering_2", "Sub_metering_3"), lty=c(1,1,1), col=c("black", "red","blue"))
 dev.off()
 

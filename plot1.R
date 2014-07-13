@@ -12,5 +12,5 @@ data.feb$DateTime <- strptime(data.feb$DateTime, format = "%d/%m/%Y %H:%M:%S")
 # play with plots
 # histogram
 png("plot1.png")
-hist(data.feb$Global_active_power, col = "red", main = names(data.feb[3]), xlab = paste(names(data.feb[3]), " {kilowatts}"))
+hist(data.feb$Global_active_power, col = "red", main = "Global Active Power", xlab = "Global Active Power (kilowatts)")
 dev.off()
